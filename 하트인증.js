@@ -41,7 +41,6 @@ module.exports = {
         const embed = new EmbedBuilder()
           .setAuthor({
             name: "하트인증성공",
-            iconURL: `${require("../../../function/linkemoji").check}`,
           })
           .setTitle("하트인증을 성공하였습니다.")
           .setColor("Green");
@@ -53,8 +52,7 @@ module.exports = {
         console.error(e);
       });
 
-    return await interaction.editReply({
-      embeds: [],
+    return await interaction.reply({
       content: "잘못된 경로로 진입하셨습니다.",
     });
   },
