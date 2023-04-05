@@ -30,7 +30,6 @@ module.exports = {
     koreanbots.mybot
       .checkVote(interaction.member.user.id)
       .then(async (voted) => {
-        console.log(res);
         const not = new EmbedBuilder()
           .setAuthor({
             name: "하트인증실패",
